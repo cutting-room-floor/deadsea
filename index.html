@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>deadsea</title>
+    <script src='deadsea.js'></script>
+    <style>
+      body {
+        width:400px;
+        margin:30px auto;
+        color:#222;
+        font:15px/30px 'Helvetica Neue', sans-serif;
+        }
+
+      #deadsea-1 {
+        height:200px;
+        background-color:#a0eef2;
+        }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus vel massa sagittis pretium. Donec gravida est quis elit pharetra vestibulum mattis tortor facilisis. Maecenas leo elit, vehicula ut rutrum iaculis, fringilla vel quam. Aliquam nunc metus, tempor quis volutpat ac, porttitor in purus. Donec quis nibh nisl, id auctor nulla. Nunc id lobortis leo. Nulla volutpat, est non ullamcorper gravida, sapien erat volutpat odio, eget pellentesque mi augue in risus. Suspendisse malesuada sapien nec lacus porta dapibus. Morbi a ipsum quis turpis volutpat pellentesque. Curabitur urna ante, blandit pulvinar convallis id, elementum eget metus. Sed quis egestas mauris. In velit lorem, iaculis ac molestie eget, convallis vel augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas fermentum cursus odio, vulputate hendrerit mauris aliquam eget. Phasellus tortor elit, pharetra non viverra quis, rhoncus ut sem. Nam nec neque a dui accumsan ultricies ac ut leo. Aenean sed dui turpis. Vestibulum elit mi, molestie ultrices lacinia bibendum, pulvinar tempor eros. Duis ac vulputate sapien.</p>
+
+    <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+
+    <div id='deadsea-1'>I'm an element!</div>
+
+    <p>Vestibulum faucibus nisi vel felis egestas eget convallis purus elementum. Aenean libero mauris, molestie sed varius vitae, aliquam id dui. Phasellus feugiat iaculis orci in facilisis. Suspendisse fringilla semper nibh, ultrices imperdiet tellus semper et. Aenean vel mauris lacus. Maecenas vulputate pharetra odio, id fringilla risus pretium eget. Vestibulum at urna ante, quis porttitor elit. Quisque faucibus euismod dui sit amet convallis. Praesent interdum, turpis in accumsan pulvinar, turpis velit pulvinar justo, ut sollicitudin magna ligula id nunc. Donec faucibus nulla ut sapien dapibus accumsan. Nullam pretium luctus eros, at pellentesque felis lacinia in. Phasellus lobortis aliquet ullamcorper. Praesent nec lacus et sem dictum pellentesque quis vel orci. Praesent orci dolor, cursus ut euismod eget, semper et nisl. Nunc at viverra orci. In ultrices euismod dignissim. Sed in purus sem, dapibus convallis ipsum. Maecenas non dolor vel odio rutrum adipiscing.</p>
+
+
+    <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+
+    <script>
+      var d = document.getElementById('deadsea-1');
+      deadsea.blockScrollInto(d);
+      d.addEventListener('mousewheel', function(e) {
+        console.log('page handler!');
+        e.preventDefault();
+        this.innerHTML = 'caught mousewheel!';
+      }, false);
+    </script>
+  </body>
+</html>
