@@ -2,39 +2,134 @@
   <head>
     <title>deadsea</title>
     <script src='deadsea.js'></script>
+    <script src='https://raw.github.com/stamen/modestmaps-js/master/modestmaps.min.js'></script>
     <style>
       body {
-        width:400px;
-        margin:30px auto;
-        color:#222;
-        font:15px/30px 'Helvetica Neue', sans-serif;
+        color:#333;
+        font:13px/30px 'Helvetica Neue', sans-serif;
         }
 
-      #deadsea-1 {
+      h1 {
+        font:bold 45px/60px 'Georgia', serif;
+        }
+
+      div.dls {
+        background-color:#e6ece9;
+        font:18px/30px 'Helvetica Neue', sans-serif;
+        padding:5px;
+        text-align:center;
+        }
+
+      div.dls a {
+      }
+
+      code {
+        background:#E6ECE9;
+        padding:5px;
+        }
+
+      p.large {
+        font:18px/30px 'Helvetica Neue', sans-serif;
+        }
+
+      p.action {
+        text-align:center;
+        color:#551a8b;
+        }
+
+      div.container {
+        width:500px;
+        margin:30px auto;
+        }
+
+      #deadsea-1, #deadsea-2 {
         height:200px;
         background-color:#a0eef2;
         }
     </style>
   </head>
   <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus vel massa sagittis pretium. Donec gravida est quis elit pharetra vestibulum mattis tortor facilisis. Maecenas leo elit, vehicula ut rutrum iaculis, fringilla vel quam. Aliquam nunc metus, tempor quis volutpat ac, porttitor in purus. Donec quis nibh nisl, id auctor nulla. Nunc id lobortis leo. Nulla volutpat, est non ullamcorper gravida, sapien erat volutpat odio, eget pellentesque mi augue in risus. Suspendisse malesuada sapien nec lacus porta dapibus. Morbi a ipsum quis turpis volutpat pellentesque. Curabitur urna ante, blandit pulvinar convallis id, elementum eget metus. Sed quis egestas mauris. In velit lorem, iaculis ac molestie eget, convallis vel augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas fermentum cursus odio, vulputate hendrerit mauris aliquam eget. Phasellus tortor elit, pharetra non viverra quis, rhoncus ut sem. Nam nec neque a dui accumsan ultricies ac ut leo. Aenean sed dui turpis. Vestibulum elit mi, molestie ultrices lacinia bibendum, pulvinar tempor eros. Duis ac vulputate sapien.</p>
+    <div class='container'>
+      <h1>Dead Sea</h1>
+      <p class='large'>It's annoying when you're scrolling through a page
+      and you happen to scroll over a map that's embedded, so your scroll wheel
+      starts zooming into the map and now your map is all askew, and you can't find
+      your socks and you forget your phone number, so you have a friend call
+      you.</p>
+      <p class='large'><strong>Dead sea</strong> is a micro-framework (less than 1K)
+      that lets you call <code>deadsea.blockScrollInto(element)</code>. It
+      deals with DOM elements, not mapping frameworks, so it should work
+      with <a href='http://github.com/stamen/modestmaps-js'>Modest Maps</a>,
+      <a href='http://polymaps.org/'>Polymaps</a>, and what-have-you.</p>
+      <p class='large'>It's compatible with <strong>modern browsers</strong>. It won't
+      break IE, it just won't do anything in it.</p>
+      <div class='dls'><a href='https://github.com/tmcw/deadsea'>on GitHub</a> , <a href='https://raw.github.com/tmcw/deadsea/master/deadsea.min.js'>deadsea.min.js</a></div>
+      <p class='large action'>&#8597; Scroll through this page for a demo</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus vel massa sagittis pretium. Donec gravida est quis elit pharetra vestibulum mattis tortor facilisis. Maecenas leo elit, vehicula ut rutrum iaculis, fringilla vel quam. Aliquam nunc metus, tempor quis volutpat ac, porttitor in purus. Donec quis nibh nisl, id auctor nulla. Nunc id lobortis leo. Nulla volutpat, est non ullamcorper gravida, sapien erat volutpat odio, eget pellentesque mi augue in risus. Suspendisse malesuada sapien nec lacus porta dapibus. Morbi a ipsum quis turpis volutpat pellentesque. Curabitur urna ante, blandit pulvinar convallis id, elementum eget metus. Sed quis egestas mauris. In velit lorem, iaculis ac molestie eget, convallis vel augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas fermentum cursus odio, vulputate hendrerit mauris aliquam eget. Phasellus tortor elit, pharetra non viverra quis, rhoncus ut sem. Nam nec neque a dui accumsan ultricies ac ut leo. Aenean sed dui turpis. Vestibulum elit mi, molestie ultrices lacinia bibendum, pulvinar tempor eros. Duis ac vulputate sapien.</p>
 
-    <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+      <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
 
-    <div id='deadsea-1'>I'm an element!</div>
+      <h3>A Modest Maps Map</h3>
+      <div id='deadsea-2'></div>
 
-    <p>Vestibulum faucibus nisi vel felis egestas eget convallis purus elementum. Aenean libero mauris, molestie sed varius vitae, aliquam id dui. Phasellus feugiat iaculis orci in facilisis. Suspendisse fringilla semper nibh, ultrices imperdiet tellus semper et. Aenean vel mauris lacus. Maecenas vulputate pharetra odio, id fringilla risus pretium eget. Vestibulum at urna ante, quis porttitor elit. Quisque faucibus euismod dui sit amet convallis. Praesent interdum, turpis in accumsan pulvinar, turpis velit pulvinar justo, ut sollicitudin magna ligula id nunc. Donec faucibus nulla ut sapien dapibus accumsan. Nullam pretium luctus eros, at pellentesque felis lacinia in. Phasellus lobortis aliquet ullamcorper. Praesent nec lacus et sem dictum pellentesque quis vel orci. Praesent orci dolor, cursus ut euismod eget, semper et nisl. Nunc at viverra orci. In ultrices euismod dignissim. Sed in purus sem, dapibus convallis ipsum. Maecenas non dolor vel odio rutrum adipiscing.</p>
+      <p>Vestibulum faucibus nisi vel felis egestas eget convallis purus elementum. Aenean libero mauris, molestie sed varius vitae, aliquam id dui. Phasellus feugiat iaculis orci in facilisis. Suspendisse fringilla semper nibh, ultrices imperdiet tellus semper et. Aenean vel mauris lacus. Maecenas vulputate pharetra odio, id fringilla risus pretium eget. Vestibulum at urna ante, quis porttitor elit. Quisque faucibus euismod dui sit amet convallis. Praesent interdum, turpis in accumsan pulvinar, turpis velit pulvinar justo, ut sollicitudin magna ligula id nunc. Donec faucibus nulla ut sapien dapibus accumsan. Nullam pretium luctus eros, at pellentesque felis lacinia in. Phasellus lobortis aliquet ullamcorper. Praesent nec lacus et sem dictum pellentesque quis vel orci. Praesent orci dolor, cursus ut euismod eget, semper et nisl. Nunc at viverra orci. In ultrices euismod dignissim. Sed in purus sem, dapibus convallis ipsum. Maecenas non dolor vel odio rutrum adipiscing.</p>
 
+      <p>He and I were never very friendly. Although, however, we were friendly, even very. I've got something wrong here: To be exact, he and I were not friendly and were always on bad terms. And this is how we got crossed: I was standing beside a shop; they were issuing sugar there, and I was standing in the queue, trying not to listen to what was being said around me. I had slight toothache and was not in the greatest of moods. It was very cold outside, and though everyone was wearing quilted fur coats they were still freezing. I was also wearing a quilted fur, but I was not freezing myself, though my hands were freezing because I had to keep taking them out of my pockets to move the suitcase I was holding between my knees, so that it didn't go missing. Suddenly someone struck me on the back. I flew into a state of indescribable indignation and, quick as lightning, began to consider how to punish the offender. During this time, I was struck a second time on the back. I pricked up my ears, but decided against turning my head and pretended that I hadn't noticed. I just, to be on the safe side, took the suitcase in my hand. Seven minutes passed and I was struck on the back a third time. At this I turned round and saw in front of me a tall middle-aged man in a rather shabby, but still quite good, military fur coat.</p>
 
-    <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+      <div id='deadsea-1'>Scroll in here!</div>
+
+      <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+
+      <p>When I again wanted to take my place in the queue, they wouldn’t let me in and even pushed me gradually out on to the street. Holding back my anger at such bad manners, I went off home. At home I discovered that my brother had taken all the money from my purse. At this stage I got absolutely furious with my brother, and since then he and I have never made it up.</p>
+
+      <p>Once I couldn’t contain myself and burst out laughing. They rushed in horror to escape - some through the door, some through the window, and some straight through the walls.</p>
+    </div>
 
     <script>
       var d = document.getElementById('deadsea-1');
       deadsea.blockScrollInto(d);
-      d.addEventListener('mousewheel', function(e) {
-        e.preventDefault();
+
+      var d2 = document.getElementById('deadsea-2');
+      deadsea.blockScrollInto(d2);
+
+      // From Modest Maps.
+      function addEvent(obj, type, fn) {
+          if (obj.attachEvent) {
+              obj['e'+type+fn] = fn;
+              obj[type+fn] = function(){ obj['e'+type+fn](window.event); };
+              obj.attachEvent('on'+type, obj[type+fn]);
+          }
+          else {
+              obj.addEventListener(type, fn, false);
+              if (type == 'mousewheel') {
+                  obj.addEventListener('DOMMouseScroll', fn, false);
+              }
+          }
+      };
+      function cancelEvent(e) {
+          // there's more than one way to skin this cat
+          e.cancelBubble = true;
+          e.cancel = true;
+          e.returnValue = false;
+          if (e.stopPropagation) { e.stopPropagation(); }
+          if (e.preventDefault) { e.preventDefault(); }
+          return false;
+      };
+
+      addEvent(d, 'mousewheel', function(e) {
+        cancelEvent(e);
         this.innerHTML = 'caught mousewheel!';
       }, false);
+
+      var mm = com.modestmaps;
+
+      var provider = new mm.TemplatedMapProvider(
+          'http://{S}.mqcdn.com/tiles/1.0.0/osm/{Z}/{X}/{Y}.png',
+          ['otile1', 'otile2', 'otile3', 'otile4']);
+
+      var map = new com.modestmaps.Map(d2, provider);
+
+      map.setCenterZoom(new mm.Location(0, 0), 4);
     </script>
   </body>
 </html>
