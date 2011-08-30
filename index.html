@@ -32,7 +32,6 @@
       var d = document.getElementById('deadsea-1');
       deadsea.blockScrollInto(d);
       d.addEventListener('mousewheel', function(e) {
-        console.log('page handler!');
         e.preventDefault();
         this.innerHTML = 'caught mousewheel!';
       }, false);
