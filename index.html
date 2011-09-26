@@ -1,9 +1,14 @@
 <html>
   <head>
     <title>deadsea</title>
-    <script src='deadsea.js'></script>
-    <script src='https://raw.github.com/stamen/modestmaps-js/master/modestmaps.min.js'></script>
-    <style>
+    <script type='text/javascript' src='deadsea.js'></script>
+    <script
+      type='text/javascript'
+      src='https://raw.github.com/stamen/modestmaps-js/master/modestmaps.min.js'></script>
+    <script
+      src='http://maps.google.com/maps/api/js?sensor=false'
+      type='text/javascript'></script>
+    <style type='text/css'>
       body {
         color:#333;
         font:13px/30px 'Helvetica Neue', sans-serif;
@@ -42,7 +47,7 @@
         margin:30px auto;
         }
 
-      #deadsea-1, #deadsea-2 {
+      #deadsea-1, #deadsea-2, #deadsea-3 {
         height:200px;
         background-color:#a0eef2;
         }
@@ -76,6 +81,12 @@
 
       <p>He and I were never very friendly. Although, however, we were friendly, even very. I've got something wrong here: To be exact, he and I were not friendly and were always on bad terms. And this is how we got crossed: I was standing beside a shop; they were issuing sugar there, and I was standing in the queue, trying not to listen to what was being said around me. I had slight toothache and was not in the greatest of moods. It was very cold outside, and though everyone was wearing quilted fur coats they were still freezing. I was also wearing a quilted fur, but I was not freezing myself, though my hands were freezing because I had to keep taking them out of my pockets to move the suitcase I was holding between my knees, so that it didn't go missing. Suddenly someone struck me on the back. I flew into a state of indescribable indignation and, quick as lightning, began to consider how to punish the offender. During this time, I was struck a second time on the back. I pricked up my ears, but decided against turning my head and pretended that I hadn't noticed. I just, to be on the safe side, took the suitcase in my hand. Seven minutes passed and I was struck on the back a third time. At this I turned round and saw in front of me a tall middle-aged man in a rather shabby, but still quite good, military fur coat.</p>
 
+      <div id='deadsea-3'></div>
+
+      <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+
+            <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
+
       <div id='deadsea-1'>Scroll in here!</div>
 
       <p>Cras euismod semper sem, quis commodo dolor iaculis at. Donec erat nisl, ullamcorper ac auctor vel, dapibus et libero. Nunc sollicitudin enim quis libero blandit non ullamcorper urna suscipit. Fusce et eleifend erat. Nulla facilisi. Ut tristique volutpat euismod. Mauris venenatis eros ut tortor cursus non interdum arcu scelerisque. Morbi vehicula volutpat erat. Donec congue neque ac erat pulvinar dignissim. Phasellus vel tristique lorem.</p>
@@ -85,12 +96,15 @@
       <p>Once I couldn’t contain myself and burst out laughing. They rushed in horror to escape - some through the door, some through the window, and some straight through the walls.</p>
     </div>
 
-    <script>
+    <script type='text/javascript'>
       var d = document.getElementById('deadsea-1');
       deadsea.blockScrollInto(d);
 
       var d2 = document.getElementById('deadsea-2');
       deadsea.blockScrollInto(d2);
+
+      var d3 = document.getElementById('deadsea-3');
+      deadsea.blockScrollInto(d3);
 
       // From Modest Maps.
       function addEvent(obj, type, fn) {
@@ -106,6 +120,7 @@
               }
           }
       };
+
       function cancelEvent(e) {
           // there's more than one way to skin this cat
           e.cancelBubble = true;
@@ -130,6 +145,14 @@
       var map = new com.modestmaps.Map(d2, provider);
 
       map.setCenterZoom(new mm.Location(0, 0), 4);
+
+
+      var m = new google.maps.Map(
+        document.getElementById('deadsea-3'), {
+          center: new google.maps.LatLng(0, 0),
+          zoom: 1,
+          mapTypeId: google.maps.MapTypeId.ROADMAP });
+
     </script>
     <script type="text/javascript">
       var _gauges = _gauges || [];

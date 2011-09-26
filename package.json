@@ -1,0 +1,19 @@
+{
+  "name": "deadsea",
+  "description": "a library for preventing map-scrolling fail",
+  "version": "0.0.1",
+  "author": {
+    "name": "MapBox",
+    "url": "http://mapbox.com/",
+    "email": "info@mapbox.com"
+  },
+  "keywords": ["map", "geo", "browser"],
+  "main": "./deadsea.js",
+  "homepage": "https://github.com/mapbox/deadsea",
+  "repositories": [{
+    "type" : "git",
+    "url"  : "git://github.com/mapbox/deadsea.git"
+  }],
+  "devDependencies": { },
+  "directories": { }
+}
