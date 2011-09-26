@@ -14,6 +14,9 @@
     "type" : "git",
     "url"  : "git://github.com/mapbox/deadsea.git"
   }],
-  "devDependencies": { },
+  "devDependencies": {
+    "uglify-js": "0.0.x",
+    "banner": "0.0.x"
+  },
   "directories": { }
 }
