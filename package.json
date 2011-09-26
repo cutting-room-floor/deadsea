@@ -1,7 +1,7 @@
 {
   "name": "deadsea",
   "description": "a library for preventing map-scrolling fail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "MapBox",
     "url": "http://mapbox.com/",
