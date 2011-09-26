@@ -11,9 +11,8 @@ But its tested to work in Modest Maps and Google Maps API v3.
 * Chrome ~16
 * Safari ~5
 * Firefox 3+
-* IE 9+
 
-This code doesn't do anything on IE<9 - it doesn't break the browser,
+This code doesn't do anything on IE - it doesn't break the browser,
 but also doesn't fix any problems.
 
 # Authors
