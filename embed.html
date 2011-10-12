@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>deadsea</title>
+    <script type='text/javascript' src='deadsea.js'></script>
+    <script
+      type='text/javascript'
+      src='modestmaps.min.js'></script>
+    <style type='text/css'>
+      body {
+        margin:0;
+        padding:0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='deadsea-iframe'></div>
+    <script type='text/javascript'>
+      var d = document.getElementById('deadsea-iframe');
+      deadsea.blockScrollInto(document.body);
+
+      // From Modest Maps.
+      function addEvent(obj, type, fn) {
+          if (obj.attachEvent) {
+              obj['e'+type+fn] = fn;
+              obj[type+fn] = function(){ obj['e'+type+fn](window.event); };
+              obj.attachEvent('on'+type, obj[type+fn]);
+          }
+          else {
+              obj.addEventListener(type, fn, false);
+              if (type == 'mousewheel') {
+                  obj.addEventListener('DOMMouseScroll', fn, false);
+              }
+          }
+      };
+
+      function cancelEvent(e) {
+          // there's more than one way to skin this cat
+          e.cancelBubble = true;
+          e.cancel = true;
+          e.returnValue = false;
+          if (e.stopPropagation) { e.stopPropagation(); }
+          if (e.preventDefault) { e.preventDefault(); }
+          return false;
+      };
+
+      var mm = com.modestmaps;
+
+      var provider = new mm.TemplatedMapProvider(
+          'http://{S}.mqcdn.com/tiles/1.0.0/osm/{Z}/{X}/{Y}.png',
+          ['otile1', 'otile2', 'otile3', 'otile4']);
+
+      var map = new com.modestmaps.Map(d, provider, new mm.Point(500, 200));
+
+      map.setCenterZoom(new mm.Location(0, 0), 4);
+
+    </script>
+  </body>
+</html>
