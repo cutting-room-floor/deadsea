@@ -22,4 +22,3 @@ but also doesn't fix any problems.
 # License
 
 * BSD
-
